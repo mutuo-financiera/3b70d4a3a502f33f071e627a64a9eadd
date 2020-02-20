@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_Letter" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6932d0a8-85f0-433b-8bca-c514557be318">
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Empty Dataset1" uuid="4038bb7a-f4d6-47db-831a-6e78a3ff1e55"/>
+	<subDataset name="Products" uuid="d97d89ef-7f41-44f8-9e99-c3e48847c83d">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<title>
+		<band height="740" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="642" width="551" height="98" uuid="064749c9-134f-42dd-8ddd-8d731be70497"/>
+				<textElement textAlignment="Justified">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Todos los arrendamientos de vehículos deberán contar con póliza de seguro vigente durante la vida del arrendamiento.  En caso de que se incluya la cotización de un seguro x 12 meses, se deberá informar a Mutuo un mes antes de que terminen estos 12 meses en caso de que se desee cambiar la póliza. En caso de no recibir instrucciones específicas por el cliente, se renovará automaticamente la póliza y el cliente esta obligado a cumplir con los pagos adicionales correspondientes al financiamiento de la renovación del seguro. 
+La información contenida en este documento es para fines informativos únicamente y no refleja los términos finales del financiamiento a ser otorgado por Mutuo Financiera; en el entendido que, la información aquí plasmada podrá variar significativamente una vez que sea celebrado el contrato correspondiente estableciendo los términos y condiciones acordados entre las partes. La entrega de este borrador no constituye ni supone obligación alguna por parte de Mutuo Financiera para aprobar y/u otorgar el financiamiento al cliente.
+Usted puede acceder al aviso de privacidad integral de Mutuo Financiera a través de la página web:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="723" width="135" height="13" forecolor="#078DB3" uuid="528183a6-2b26-4374-8e98-a2987c828aa3"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[www.mutuofinanciera.com
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="0" width="250" height="27" forecolor="#01558B" uuid="3be57998-a632-48e0-b475-ffcf0936bb24"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Propuesta de financiamiento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="30" width="250" height="18" forecolor="#01558B" uuid="332a6069-0cd9-4dc8-bec5-9ba540053b14"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Arrendamiento financiero]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="11" y="49" width="300" height="24" forecolor="#000000" backcolor="#FFFFFF" uuid="2c21bd34-505e-45e5-bf0b-0dc54f6a316b"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Tu propuesta de financiamiento incluye:j]]></text>
+			</staticText>
+			<frame>
+				<reportElement x="330" y="125" width="230" height="140" uuid="ebcc1b92-1790-4b86-a6da-94fa48c55da9"/>
+				<ellipse>
+					<reportElement mode="Opaque" x="41" y="28" width="80" height="80" forecolor="#01558B" backcolor="#01558B" uuid="53dd4844-1703-4f25-98a7-1f92d8498e06"/>
+				</ellipse>
+				<staticText>
+					<reportElement x="0" y="120" width="230" height="14" uuid="6f763f30-e405-4911-870a-1cd53d8fcd4f"/>
+					<textElement textAlignment="Center">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[*Precio promedio en la República Mexicana]]></text>
+				</staticText>
+				<ellipse>
+					<reportElement mode="Opaque" x="147" y="48" width="40" height="40" forecolor="#B1CBDC" backcolor="#B1CBDC" uuid="a72baea3-ec02-4cb4-b65b-56f8c132a554"/>
+				</ellipse>
+				<staticText>
+					<reportElement x="27" y="6" width="110" height="18" forecolor="#01558B" uuid="04e91c79-1420-4444-86f3-3f4c3b6702d1"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[Gasolina*]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="131" y="12" width="80" height="30" forecolor="#01558B" uuid="b2dc2d89-4328-4359-bdf6-a2f24a3395fc"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[GNV*]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="49" y="57" width="65" height="21" forecolor="#FFFFFF" uuid="ea7ff9b1-f39c-4d0a-89e6-0348909b1ba9"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="151" y="59" width="32" height="18" forecolor="#01558B" uuid="058125f7-df57-46a8-bb63-da4f926c1cef"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="10" y="320" width="551" height="160" uuid="a24d94cc-42b0-4855-b4c7-392560482b4b"/>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="30" width="285" height="30" backcolor="#D6E2E9" uuid="9a3cdefb-26a1-442e-b214-b33ce86e0c83"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[ Enganche]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="60" width="285" height="30" backcolor="#D6E2E9" uuid="f65da07a-7009-43db-8136-df1977ddee94"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[ Comisión por apertura]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="0" width="551" height="30" uuid="08b4eff1-cdac-4ce4-8cf8-170b7f5e3c88"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[Características de tu propuesta]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="90" width="285" height="30" forecolor="#01558B" uuid="4d3b786b-3c03-4695-9df2-2afe389361d2"/>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Total pago inicial]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="120" width="550" height="30" forecolor="#01558B" backcolor="#F9F9F9" uuid="32d4c84b-ffca-4369-aaaf-e04cae54e38e"/>
+					<box>
+						<pen lineColor="#E0E0E0"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[ Total a Financiar]]></text>
+				</staticText>
+				<textField>
+					<reportElement mode="Opaque" x="405" y="30" width="146" height="30" backcolor="#F9F9F9" uuid="48e30eba-964d-4588-a191-e2a002993963"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="405" y="60" width="146" height="30" backcolor="#F9F9F9" uuid="d0326c1c-e0a3-45cb-945f-f49f9d1fbcc3"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="285" y="90" width="266" height="30" uuid="b46cf7bb-6597-46f7-9091-45d995ee543c"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="285" y="120" width="266" height="30" backcolor="#F9F9F9" uuid="7b276421-7d5f-43ad-9f23-6872de61deb5"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="285" y="30" width="120" height="30" backcolor="#E9E9E9" uuid="256d5437-e064-47a1-8d8c-f1200fa3e52a"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="285" y="60" width="120" height="30" backcolor="#E9E9E9" uuid="d18627ae-f8b8-43b2-a67b-b34b23bfad9d"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="10" y="490" width="550" height="136" uuid="6a4c5c48-fa43-4a9f-b1b2-c4ed7720d9f4"/>
+				<staticText>
+					<reportElement x="0" y="0" width="285" height="20" uuid="9c37e297-0ea8-4ab2-be88-7b8535c183d4"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[Plazo]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="20" width="285" height="20" uuid="0af05e38-9238-4a68-8fab-947f0f30199c"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[Plazo mensual a través de fuentes adicionales]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="40" width="285" height="20" uuid="5dcc42a9-70f3-45c3-832d-0abee975d181"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[Plazo a través del recaudo]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="50" y="60" width="235" height="20" forecolor="#01558B" uuid="cf377d01-96f9-407e-b4df-c04f39509584"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[Litros cargados al día]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="50" y="80" width="235" height="20" forecolor="#01558B" uuid="b052c521-a4c5-4865-961c-b1876e6b1737"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[Sobreprecio]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="114" width="550" height="20" backcolor="#F9F9F9" uuid="d309d8af-eb4e-4d36-ad15-4e9ccbe747dc"/>
+					<box>
+						<pen lineColor="#E0E0E0"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[ Pago mensual total]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="389" y="100" width="161" height="14" forecolor="#01558B" uuid="4d143c4e-d715-47de-9cb6-aea584465856"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[(Asumiendo 26 días de trabajo al mes) ]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="285" y="0" width="265" height="20" uuid="2ec25415-6dc3-4f68-96e0-5d18067f1d46"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="285" y="20" width="265" height="20" uuid="5b99add7-987b-4f5c-b1b5-717324175b9a"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="285" y="40" width="265" height="20" uuid="b36a4ef7-ec46-4968-8a14-a2f5cb55b0ba"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="285" y="60" width="265" height="20" uuid="8e2dff59-eb17-4abb-8df2-4432671ccd46"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="285" y="80" width="265" height="20" uuid="0b71d0ea-b4b7-4f5b-a763-52c6f18daa45"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="285" y="114" width="265" height="20" uuid="1feaa82f-39e1-4984-bf46-2836bb37498b"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<componentElement>
+				<reportElement x="10" y="100" width="251" height="60" uuid="0670c1b0-8353-45c4-a273-f7874abb813e">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Products" uuid="03abcd5b-1503-4b93-a1f0-a69460804767">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="40" uuid="e6a0fc80-371a-44b5-94c9-cce8097c6e02">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<property name="com.jaspersoft.studio.layout"/>
+						<jr:columnFooter style="Table_CH" height="30" rowSpan="1">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+							<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0"/>
+							<frame>
+								<reportElement x="0" y="0" width="40" height="30" uuid="42d3a048-4a05-4213-8478-9907c1bceb90"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<ellipse>
+									<reportElement x="8" y="5" width="24" height="21" forecolor="#D6E2E9" backcolor="#D6E2E9" uuid="bbde277f-7daa-43c4-8722-decf4948ba56"/>
+								</ellipse>
+								<staticText>
+									<reportElement x="12" y="8" width="16" height="15" forecolor="#01558B" uuid="7bf8f69b-83d9-4255-8c6c-c4c8bb092eef"/>
+									<text><![CDATA[Static Text]]></text>
+								</staticText>
+							</frame>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="119" uuid="ec583f79-2880-44db-ae17-889ce91ac8c2">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:columnFooter style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="119" height="30" uuid="64ebe9c9-4062-40aa-b69a-354e81c3f7cf"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle"/>
+								<text><![CDATA[Valor Total]]></text>
+							</staticText>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="119" height="30" uuid="93d4fffe-8040-495b-895a-356951fcc030"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle"/>
+								<text><![CDATA[Static Text]]></text>
+							</staticText>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="93" uuid="43f522dc-64a2-48cc-8474-d8259daeb2cb">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:columnFooter style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="93" height="30" uuid="9f09fcab-962c-4897-b4e1-2288d22750ce"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Static Text]]></text>
+							</staticText>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="93" height="30" uuid="b287b583-23e4-46b0-86d8-d8f7189b72f7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Static Text]]></text>
+							</staticText>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="11" y="0" width="50" height="47" uuid="882da769-46f2-47fc-bd50-47bef153636d"/>
+				<box rightPadding="0"/>
+				<imageExpression><![CDATA["https://github.com/mutuo-financiera/3b70d4a3a502f33f071e627a64a9eadd/raw/master/assets/Mutuo_Logo_MarcaRegistrada-02.png"]]></imageExpression>
+			</image>
+			<frame>
+				<reportElement x="433" y="30" width="117" height="32" uuid="883189e8-cc4c-48fc-a9a3-12667d0888c7"/>
+				<staticText>
+					<reportElement x="3" y="4" width="60" height="23" uuid="618ce9c4-43b6-447a-8d35-6e73a79f871b"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Folio No.]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="63" y="4" width="54" height="23" uuid="acb54284-5b00-4e06-8c16-1505a4cf46c7"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<textField pattern="dd MMMMM, yyyy">
+				<reportElement x="450" y="7" width="100" height="23" uuid="32e769fe-a126-4489-972b-8447d1d719e3"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[DATEFORMAT(new java.util.Date(),"dd") + " de " + DATEFORMAT(new java.util.Date(),"MM") + " del " + DATEFORMAT(new java.util.Date(),"YYYY")]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>
