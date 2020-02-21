@@ -110,26 +110,18 @@
 		<fieldDescription><![CDATA[summary.totalMonthly Payment]]></fieldDescription>
 	</field>
 	<title>
-		<band height="698" splitType="Prevent">
-			<staticText>
-				<reportElement x="10" y="600" width="551" height="98" uuid="064749c9-134f-42dd-8ddd-8d731be70497"/>
-				<textElement textAlignment="Justified">
+		<band height="713" splitType="Prevent">
+			<textField>
+				<reportElement isPrintRepeatedValues="false" x="10" y="600" width="551" height="112" uuid="48acb3bf-6522-4f28-91a5-54701cc0d08a"/>
+				<textElement textAlignment="Justified" markup="styled">
 					<font size="8"/>
 				</textElement>
-				<text><![CDATA[Todos los arrendamientos de vehículos deberán contar con póliza de seguro vigente durante la vida del arrendamiento.  En caso de que se incluya la cotización de un seguro por 12 meses, se deberá informar a Mutuo un mes antes de que terminen estos 12 meses en caso de que se desee cambiar la póliza. En caso de no recibir instrucciones específicas por el cliente, se renovará automaticamente la póliza y el cliente esta obligado a cumplir con los pagos adicionales correspondientes al financiamiento de la renovación del seguro. 
-La información contenida en este documento es para fines informativos únicamente y no refleja los términos finales del financiamiento a ser otorgado por Mutuo Financiera; en el entendido que, la información aquí plasmada podrá variar significativamente una vez que sea celebrado el contrato correspondiente estableciendo los términos y condiciones acordados entre las partes. La entrega de este borrador no constituye ni supone obligación alguna por parte de Mutuo Financiera para aprobar y/u otorgar el financiamiento al cliente.
-Usted puede acceder al aviso de privacidad integral de Mutuo Financiera a través de la página web:]]></text>
-			</staticText>
+				<textFieldExpression><![CDATA["Todos los arrendamientos de vehículos deberán contar con póliza de seguro vigente durante la vida del arrendamiento.  En caso de que se incluya la cotización de un seguro por 12 meses, se deberá informar a Mutuo un mes antes de que terminen estos 12 meses en caso de que se desee cambiar la póliza. En caso de no recibir instrucciones específicas por el cliente, se renovará automaticamente la póliza y el cliente esta obligado a cumplir con los pagos adicionales correspondientes al financiamiento de la renovación del seguro.\n "+
+"La información contenida en este documento es para fines informativos únicamente y no refleja los términos finales del financiamiento a ser otorgado por Mutuo Financiera; en el entendido que, la información aquí plasmada podrá variar significativamente una vez que sea celebrado el contrato correspondiente estableciendo los términos y condiciones acordados entre las partes. La entrega de este borrador no constituye ni supone obligación alguna por parte de Mutuo Financiera para aprobar y/u otorgar el financiamiento al cliente.\n" +
+"Usted puede acceder al aviso de privacidad integral de Mutuo Financiera a través de la página web: <style forecolor='#01558B' isBold='true' >www.mutuofinanciera.com</style>"]]></textFieldExpression>
+			</textField>
 			<staticText>
-				<reportElement x="368" y="680" width="135" height="13" forecolor="#078DB3" uuid="528183a6-2b26-4374-8e98-a2987c828aa3"/>
-				<textElement>
-					<font size="8"/>
-				</textElement>
-				<text><![CDATA[www.mutuofinanciera.com
-]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="63" y="0" width="250" height="27" forecolor="#01558B" uuid="3be57998-a632-48e0-b475-ffcf0936bb24"/>
+				<reportElement x="63" y="0" width="356" height="27" forecolor="#01558B" uuid="3be57998-a632-48e0-b475-ffcf0936bb24"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="16" isBold="true"/>
 				</textElement>
@@ -515,7 +507,7 @@ Usted puede acceder al aviso de privacidad integral de Mutuo Financiera a travé
 				</textField>
 			</frame>
 			<textField>
-				<reportElement x="444" y="11" width="106" height="21" uuid="73de3fb6-192a-4fa8-a28d-7a7356920dcb"/>
+				<reportElement x="419" y="11" width="130" height="21" uuid="73de3fb6-192a-4fa8-a28d-7a7356920dcb"/>
 				<textElement textAlignment="Right"/>
 				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
 			</textField>
