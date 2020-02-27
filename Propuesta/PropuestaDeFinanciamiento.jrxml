@@ -372,7 +372,7 @@
 										<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 										<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 									</box>
-									<textField textAdjust="ScaleFont">
+									<textField>
 										<reportElement x="0" y="0" width="398" height="24" uuid="30520b17-1e81-440c-bea2-807105fb05e0"/>
 										<box>
 											<pen lineWidth="0.0"/>
