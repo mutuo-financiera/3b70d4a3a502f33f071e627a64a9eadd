@@ -157,8 +157,8 @@
 					</textElement>
 					<textFieldExpression><![CDATA["Folio: " + $F{folio}]]></textFieldExpression>
 				</textField>
-				<textField textAdjust="StretchHeight">
-					<reportElement x="0" y="3" width="196" height="18" forecolor="#01558B" uuid="ec780cb8-06f3-4f23-a6a2-f9bf12578c97"/>
+				<textField>
+					<reportElement x="0" y="3" width="442" height="18" forecolor="#01558B" uuid="ec780cb8-06f3-4f23-a6a2-f9bf12578c97"/>
 					<box rightPadding="3"/>
 					<textElement verticalAlignment="Middle">
 						<font size="12"/>
