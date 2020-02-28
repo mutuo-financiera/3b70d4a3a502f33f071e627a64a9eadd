@@ -52,7 +52,7 @@
 		</variable>
 	</subDataset>
 	<queryString language="JSON">
-		<![CDATA[summary]]>
+		<![CDATA[summary.clientName]]>
 	</queryString>
 	<field name="gasPrice" class="java.lang.String">
 		<property name="net.sf.jasperreports.json.field.expression" value="summary.gasPrice"/>
@@ -138,6 +138,10 @@
 		<property name="net.sf.jasperreports.json.field.expression" value="summary.dateValid"/>
 		<fieldDescription><![CDATA[summary.dateValid]]></fieldDescription>
 	</field>
+	<field name="clientName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="summary.clientName"/>
+		<fieldDescription><![CDATA[summary.clientName]]></fieldDescription>
+	</field>
 	<title>
 		<band height="132" splitType="Prevent">
 			<frame>
@@ -168,7 +172,7 @@
 				<textField>
 					<reportElement x="0" y="37" width="196" height="14" uuid="fd2eb0e9-7c30-430c-987b-a7e08fa17b4d"/>
 					<box rightPadding="3"/>
-					<textFieldExpression><![CDATA["Solicitante: " + $F{client name}]]></textFieldExpression>
+					<textFieldExpression><![CDATA["Solicitante: " + $F{clientName}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="0" y="52" width="196" height="14" uuid="9597f1e9-76e3-4284-aa60-b95d2a36051a">
