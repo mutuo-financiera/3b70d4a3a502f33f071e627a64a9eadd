@@ -142,6 +142,10 @@
 		<property name="net.sf.jasperreports.json.field.expression" value="summary.clientName"/>
 		<fieldDescription><![CDATA[summary.clientName]]></fieldDescription>
 	</field>
+	<field name="totalMonthlyPayment" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="summary.totalMonthlyPayment"/>
+		<fieldDescription><![CDATA[summary.totalMonthlyPayment]]></fieldDescription>
+	</field>
 	<title>
 		<band height="132" splitType="Prevent">
 			<frame>
@@ -554,7 +558,7 @@
 						<reportElement x="285" y="23" width="265" height="20" uuid="5b99add7-987b-4f5c-b1b5-717324175b9a"/>
 						<box rightPadding="3"/>
 						<textElement textAlignment="Right" verticalAlignment="Middle"/>
-						<textFieldExpression><![CDATA["$" + $F{totalMonthly Payment}]]></textFieldExpression>
+						<textFieldExpression><![CDATA["$" + $F{totalMonthlyPayment}]]></textFieldExpression>
 					</textField>
 					<textField>
 						<reportElement x="285" y="43" width="265" height="11" uuid="8e2dff59-eb17-4abb-8df2-4432671ccd46"/>
