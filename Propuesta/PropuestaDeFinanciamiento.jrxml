@@ -202,7 +202,7 @@
 						<text><![CDATA[*Precio promedio en la República Mexicana]]></text>
 					</staticText>
 					<ellipse>
-						<reportElement mode="Opaque" x="79" y="23" width="22" height="22" forecolor="#B1CBDC" backcolor="#B1CBDC" uuid="a72baea3-ec02-4cb4-b65b-56f8c132a554"/>
+						<reportElement mode="Opaque" x="78" y="24" width="25" height="25" forecolor="#B1CBDC" backcolor="#B1CBDC" uuid="a72baea3-ec02-4cb4-b65b-56f8c132a554"/>
 					</ellipse>
 					<staticText>
 						<reportElement x="11" y="0" width="60" height="13" forecolor="#01558B" uuid="04e91c79-1420-4444-86f3-3f4c3b6702d1"/>
@@ -226,7 +226,7 @@
 						<textFieldExpression><![CDATA["$" + $F{gasPrice}]]></textFieldExpression>
 					</textField>
 					<textField>
-						<reportElement x="79" y="27" width="22" height="14" forecolor="#01558B" uuid="058125f7-df57-46a8-bb63-da4f926c1cef"/>
+						<reportElement x="79" y="30" width="22" height="14" forecolor="#01558B" uuid="058125f7-df57-46a8-bb63-da4f926c1cef"/>
 						<textElement textAlignment="Center" verticalAlignment="Middle">
 							<font size="7" isBold="true"/>
 						</textElement>
