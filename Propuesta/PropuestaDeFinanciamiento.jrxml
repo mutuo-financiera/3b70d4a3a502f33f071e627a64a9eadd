@@ -154,6 +154,18 @@
 		<property name="net.sf.jasperreports.json.field.expression" value="summary.hasInsurance"/>
 		<fieldDescription><![CDATA[summary.hasInsurance]]></fieldDescription>
 	</field>
+	<field name="formalizationFee" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="summary.formalizationFee"/>
+		<fieldDescription><![CDATA[summary.formalizationFee]]></fieldDescription>
+	</field>
+	<field name="formalizationFeeAmount" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="summary.formalizationFeeAmount"/>
+		<fieldDescription><![CDATA[summary.formalizationFeeAmount]]></fieldDescription>
+	</field>
+	<field name="totalToFinance" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="summary.totalToFinance"/>
+		<fieldDescription><![CDATA[summary.totalToFinance]]></fieldDescription>
+	</field>
 	<title>
 		<band height="132" splitType="Prevent">
 			<frame>
@@ -503,7 +515,7 @@
 						<reportElement mode="Transparent" x="405" y="44" width="146" height="20" backcolor="#F9F9F9" uuid="d0326c1c-e0a3-45cb-945f-f49f9d1fbcc3"/>
 						<box rightPadding="3"/>
 						<textElement textAlignment="Right" verticalAlignment="Middle"/>
-						<textFieldExpression><![CDATA["$" + $F{formalisationFeeAmount}]]></textFieldExpression>
+						<textFieldExpression><![CDATA["$" + $F{formalizationFeeAmount}]]></textFieldExpression>
 					</textField>
 					<textField>
 						<reportElement x="285" y="64" width="266" height="20" uuid="b46cf7bb-6597-46f7-9091-45d995ee543c"/>
@@ -515,7 +527,7 @@
 						<reportElement mode="Opaque" x="285" y="84" width="266" height="20" backcolor="#F9F9F9" uuid="7b276421-7d5f-43ad-9f23-6872de61deb5"/>
 						<box rightPadding="3"/>
 						<textElement textAlignment="Right" verticalAlignment="Middle"/>
-						<textFieldExpression><![CDATA["$" + $F{totalToFinace}]]></textFieldExpression>
+						<textFieldExpression><![CDATA["$" +$F{totalToFinance}]]></textFieldExpression>
 					</textField>
 					<textField>
 						<reportElement mode="Transparent" x="285" y="24" width="120" height="20" backcolor="#E9E9E9" uuid="256d5437-e064-47a1-8d8c-f1200fa3e52a"/>
@@ -525,7 +537,7 @@
 					<textField>
 						<reportElement mode="Transparent" x="285" y="44" width="120" height="20" backcolor="#E9E9E9" uuid="d18627ae-f8b8-43b2-a67b-b34b23bfad9d"/>
 						<textElement textAlignment="Center" verticalAlignment="Middle"/>
-						<textFieldExpression><![CDATA[$F{formalisationFee} + "%"]]></textFieldExpression>
+						<textFieldExpression><![CDATA[$F{formalizationFee} + "%"]]></textFieldExpression>
 					</textField>
 				</frame>
 				<frame>
