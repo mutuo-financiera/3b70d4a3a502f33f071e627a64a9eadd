@@ -226,7 +226,7 @@
 						<textFieldExpression><![CDATA["$" + $F{gasPrice}]]></textFieldExpression>
 					</textField>
 					<textField>
-						<reportElement x="78" y="26" width="25" height="14" forecolor="#01558B" uuid="058125f7-df57-46a8-bb63-da4f926c1cef"/>
+						<reportElement x="77" y="26" width="27" height="14" forecolor="#01558B" uuid="058125f7-df57-46a8-bb63-da4f926c1cef"/>
 						<textElement textAlignment="Center" verticalAlignment="Middle">
 							<font size="7" isBold="true"/>
 						</textElement>
