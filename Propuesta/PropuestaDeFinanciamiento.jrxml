@@ -43,12 +43,12 @@
 			<property name="net.sf.jasperreports.json.field.expression" value="description"/>
 			<fieldDescription><![CDATA[description]]></fieldDescription>
 		</field>
-		<field name="cost" class="java.lang.String">
+		<field name="cost" class="java.lang.Integer">
 			<property name="net.sf.jasperreports.json.field.expression" value="cost"/>
 			<fieldDescription><![CDATA[cost]]></fieldDescription>
 		</field>
 		<variable name="totalSum" class="java.lang.Double" calculation="Sum">
-			<variableExpression><![CDATA[Double.parseDouble($F{cost})]]></variableExpression>
+			<variableExpression><![CDATA[$F{cost}]]></variableExpression>
 		</variable>
 	</subDataset>
 	<queryString language="JSON">
@@ -82,10 +82,6 @@
 		<property name="net.sf.jasperreports.json.field.expression" value="summary.totalTerm"/>
 		<fieldDescription><![CDATA[summary.totalTerm]]></fieldDescription>
 	</field>
-	<field name="monthlyPayment" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="summary.monthlyPayment"/>
-		<fieldDescription><![CDATA[summary.monthlyPayment]]></fieldDescription>
-	</field>
 	<field name="collectionPayment" class="java.lang.String">
 		<property name="net.sf.jasperreports.json.field.expression" value="summary.collectionPayment"/>
 		<fieldDescription><![CDATA[summary.collectionPayment]]></fieldDescription>
@@ -93,10 +89,6 @@
 	<field name="dailyConsumption" class="java.lang.String">
 		<property name="net.sf.jasperreports.json.field.expression" value="summary.dailyConsumption"/>
 		<fieldDescription><![CDATA[summary.dailyConsumption]]></fieldDescription>
-	</field>
-	<field name="overPrice" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="summary.overPrice"/>
-		<fieldDescription><![CDATA[summary.overPrice]]></fieldDescription>
 	</field>
 	<field name="totalMonthly Payment" class="java.lang.String">
 		<property name="net.sf.jasperreports.json.field.expression" value="summary.totalMonthly Payment"/>
