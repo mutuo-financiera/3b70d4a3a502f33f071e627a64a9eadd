@@ -74,25 +74,9 @@
 		<property name="net.sf.jasperreports.json.field.expression" value="summary.downpaymentPercent"/>
 		<fieldDescription><![CDATA[summary.downpaymentPercent]]></fieldDescription>
 	</field>
-	<field name="formalisationFee" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="summary.formalisationFee"/>
-		<fieldDescription><![CDATA[summary.formalisationFee]]></fieldDescription>
-	</field>
 	<field name="downpaymetAmount" class="java.lang.String">
 		<property name="net.sf.jasperreports.json.field.expression" value="summary.downpaymetAmount"/>
 		<fieldDescription><![CDATA[summary.downpaymetAmount]]></fieldDescription>
-	</field>
-	<field name="formalisationFeeAmount" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="summary.formalisationFeeAmount"/>
-		<fieldDescription><![CDATA[summary.formalisationFeeAmount]]></fieldDescription>
-	</field>
-	<field name="totalDodwnPayment" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="summary.totalDodwnPayment"/>
-		<fieldDescription><![CDATA[summary.totalDodwnPayment]]></fieldDescription>
-	</field>
-	<field name="totalToFinace" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="summary.totalToFinace"/>
-		<fieldDescription><![CDATA[summary.totalToFinace]]></fieldDescription>
 	</field>
 	<field name="totalTerm" class="java.lang.String">
 		<property name="net.sf.jasperreports.json.field.expression" value="summary.totalTerm"/>
@@ -165,6 +149,14 @@
 	<field name="totalToFinance" class="java.lang.String">
 		<property name="net.sf.jasperreports.json.field.expression" value="summary.totalToFinance"/>
 		<fieldDescription><![CDATA[summary.totalToFinance]]></fieldDescription>
+	</field>
+	<field name="downpaymentAmount" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="summary.downpaymentAmount"/>
+		<fieldDescription><![CDATA[summary.downpaymentAmount]]></fieldDescription>
+	</field>
+	<field name="cashPayment" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="summary.cashPayment"/>
+		<fieldDescription><![CDATA[summary.cashPayment]]></fieldDescription>
 	</field>
 	<title>
 		<band height="132" splitType="Prevent">
@@ -509,7 +501,7 @@
 						<reportElement mode="Transparent" x="405" y="24" width="146" height="20" backcolor="#F9F9F9" uuid="48e30eba-964d-4588-a191-e2a002993963"/>
 						<box rightPadding="3"/>
 						<textElement textAlignment="Right" verticalAlignment="Middle"/>
-						<textFieldExpression><![CDATA["$" + $F{downpaymetAmount}]]></textFieldExpression>
+						<textFieldExpression><![CDATA["$" + $F{downpaymentAmount}]]></textFieldExpression>
 					</textField>
 					<textField>
 						<reportElement mode="Transparent" x="405" y="44" width="146" height="20" backcolor="#F9F9F9" uuid="d0326c1c-e0a3-45cb-945f-f49f9d1fbcc3"/>
@@ -586,7 +578,7 @@
 						<textElement textAlignment="Right" verticalAlignment="Middle">
 							<font size="8"/>
 						</textElement>
-						<textFieldExpression><![CDATA["$" +$F{monthlyPayment}]]></textFieldExpression>
+						<textFieldExpression><![CDATA["$" +$F{cashPayment}]]></textFieldExpression>
 					</textField>
 					<textField>
 						<reportElement x="285" y="54" width="265" height="11" uuid="0b71d0ea-b4b7-4f5b-a763-52c6f18daa45"/>
