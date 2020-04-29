@@ -415,7 +415,7 @@
 										<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 										<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 									</box>
-									<textField>
+									<textField pattern="¤#,##0.##;¤-#,##0.##">
 										<reportElement mode="Opaque" x="0" y="0" width="134" height="24" backcolor="#E9E9E9" uuid="08bdd176-bdcd-4205-a505-60ebd192506a"/>
 										<box bottomPadding="0" rightPadding="5">
 											<pen lineColor="#E9E9E9"/>
@@ -425,7 +425,7 @@
 											<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 										</box>
 										<textElement textAlignment="Right" verticalAlignment="Middle"/>
-										<textFieldExpression><![CDATA["$" + $V{totalSum}]]></textFieldExpression>
+										<textFieldExpression><![CDATA[$V{totalSum}]]></textFieldExpression>
 									</textField>
 								</jr:columnFooter>
 								<jr:detailCell style="Table_TD" height="24">
@@ -435,7 +435,7 @@
 										<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 										<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 									</box>
-									<textField>
+									<textField pattern="¤#,##0.##;¤-#,##0.##">
 										<reportElement mode="Opaque" x="0" y="0" width="134" height="24" backcolor="#D6E2E9" uuid="57ba4c31-27f3-4a79-a9d8-c71726411b8a"/>
 										<box bottomPadding="0" rightPadding="5">
 											<pen lineColor="#D6E2E9"/>
@@ -445,7 +445,7 @@
 											<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 										</box>
 										<textElement textAlignment="Right" verticalAlignment="Middle"/>
-										<textFieldExpression><![CDATA["$" + $F{cost}]]></textFieldExpression>
+										<textFieldExpression><![CDATA[$F{cost}]]></textFieldExpression>
 									</textField>
 								</jr:detailCell>
 							</jr:column>
@@ -680,7 +680,7 @@
 						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					</box>
 					<textElement textAlignment="Right" verticalAlignment="Middle"/>
-					<textFieldExpression><![CDATA[$F{overprice}]]></textFieldExpression>
+					<textFieldExpression><![CDATA["$"+$F{overprice}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement mode="Transparent" x="285" y="68" width="265" height="20" backcolor="#F9F9F9" uuid="9b2966c8-cbcf-4dd7-9a4e-3e43331c01f1">
