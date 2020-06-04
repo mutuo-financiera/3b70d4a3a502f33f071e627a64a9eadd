@@ -463,13 +463,13 @@
 						<reportElement mode="Transparent" x="0" y="24" width="285" height="20" backcolor="#D6E2E9" uuid="9a3cdefb-26a1-442e-b214-b33ce86e0c83"/>
 						<box leftPadding="4" rightPadding="0"/>
 						<textElement verticalAlignment="Middle"/>
-						<text><![CDATA[Enganche]]></text>
+						<text><![CDATA[Comisión por apertura]]></text>
 					</staticText>
 					<staticText>
 						<reportElement mode="Transparent" x="0" y="44" width="285" height="20" backcolor="#D6E2E9" uuid="f65da07a-7009-43db-8136-df1977ddee94"/>
 						<box leftPadding="4"/>
 						<textElement verticalAlignment="Middle"/>
-						<text><![CDATA[Comisión por apertura]]></text>
+						<text><![CDATA[Enganche]]></text>
 					</staticText>
 					<staticText>
 						<reportElement x="0" y="4" width="551" height="20" uuid="08b4eff1-cdac-4ce4-8cf8-170b7f5e3c88"/>
@@ -491,27 +491,19 @@
 						<textElement verticalAlignment="Middle">
 							<font isBold="true"/>
 						</textElement>
-						<text><![CDATA[Total pago inicial]]></text>
-					</staticText>
-					<staticText>
-						<reportElement mode="Opaque" x="0" y="84" width="550" height="20" forecolor="#01558B" backcolor="#F9F9F9" uuid="32d4c84b-ffca-4369-aaaf-e04cae54e38e"/>
-						<box leftPadding="4">
-							<pen lineColor="#E0E0E0"/>
-						</box>
-						<textElement verticalAlignment="Middle"/>
-						<text><![CDATA[Total a financiar]]></text>
+						<text><![CDATA[Pago inicial]]></text>
 					</staticText>
 					<textField>
 						<reportElement mode="Transparent" x="405" y="24" width="146" height="20" backcolor="#F9F9F9" uuid="48e30eba-964d-4588-a191-e2a002993963"/>
 						<box rightPadding="3"/>
 						<textElement textAlignment="Right" verticalAlignment="Middle"/>
-						<textFieldExpression><![CDATA["$" + $F{downpaymentAmount}]]></textFieldExpression>
+						<textFieldExpression><![CDATA["$" + $F{formalizationFeeAmount}]]></textFieldExpression>
 					</textField>
 					<textField>
 						<reportElement mode="Transparent" x="405" y="44" width="146" height="20" backcolor="#F9F9F9" uuid="d0326c1c-e0a3-45cb-945f-f49f9d1fbcc3"/>
 						<box rightPadding="3"/>
 						<textElement textAlignment="Right" verticalAlignment="Middle"/>
-						<textFieldExpression><![CDATA["$" + $F{formalizationFeeAmount}]]></textFieldExpression>
+						<textFieldExpression><![CDATA["$" + $F{downpaymentAmount}]]></textFieldExpression>
 					</textField>
 					<textField>
 						<reportElement x="285" y="64" width="266" height="20" uuid="b46cf7bb-6597-46f7-9091-45d995ee543c"/>
@@ -520,64 +512,58 @@
 						<textFieldExpression><![CDATA["$" + $F{totalDownPayment}]]></textFieldExpression>
 					</textField>
 					<textField>
-						<reportElement mode="Opaque" x="285" y="84" width="266" height="20" backcolor="#F9F9F9" uuid="7b276421-7d5f-43ad-9f23-6872de61deb5"/>
-						<box rightPadding="3"/>
-						<textElement textAlignment="Right" verticalAlignment="Middle"/>
-						<textFieldExpression><![CDATA["$" +$F{totalToFinance}]]></textFieldExpression>
-					</textField>
-					<textField>
 						<reportElement mode="Transparent" x="285" y="24" width="120" height="20" backcolor="#E9E9E9" uuid="256d5437-e064-47a1-8d8c-f1200fa3e52a"/>
 						<textElement textAlignment="Center" verticalAlignment="Middle"/>
-						<textFieldExpression><![CDATA[$F{downpaymentPercent} + "%"]]></textFieldExpression>
+						<textFieldExpression><![CDATA[$F{formalizationFee} + "%"]]></textFieldExpression>
 					</textField>
 					<textField>
 						<reportElement mode="Transparent" x="285" y="44" width="120" height="20" backcolor="#E9E9E9" uuid="d18627ae-f8b8-43b2-a67b-b34b23bfad9d"/>
 						<textElement textAlignment="Center" verticalAlignment="Middle"/>
-						<textFieldExpression><![CDATA[$F{formalizationFee} + "%"]]></textFieldExpression>
+						<textFieldExpression><![CDATA[$F{downpaymentPercent} + "%"]]></textFieldExpression>
 					</textField>
 				</frame>
 				<frame>
 					<reportElement x="0" y="110" width="550" height="65" uuid="6a4c5c48-fa43-4a9f-b1b2-c4ed7720d9f4"/>
 					<staticText>
-						<reportElement x="0" y="3" width="285" height="20" uuid="9c37e297-0ea8-4ab2-be88-7b8535c183d4"/>
+						<reportElement x="-1" y="-26" width="285" height="20" uuid="9c37e297-0ea8-4ab2-be88-7b8535c183d4"/>
 						<box leftPadding="4"/>
 						<textElement verticalAlignment="Middle"/>
 						<text><![CDATA[Plazo]]></text>
 					</staticText>
 					<staticText>
-						<reportElement x="0" y="23" width="285" height="20" uuid="0af05e38-9238-4a68-8fab-947f0f30199c"/>
+						<reportElement x="0" y="0" width="285" height="20" uuid="0af05e38-9238-4a68-8fab-947f0f30199c"/>
 						<box leftPadding="4"/>
 						<textElement verticalAlignment="Middle"/>
 						<text><![CDATA[Pago mensual]]></text>
 					</staticText>
 					<staticText>
-						<reportElement x="50" y="43" width="235" height="11" forecolor="#01558B" uuid="cf377d01-96f9-407e-b4df-c04f39509584"/>
+						<reportElement x="50" y="20" width="235" height="11" forecolor="#01558B" uuid="cf377d01-96f9-407e-b4df-c04f39509584"/>
 						<textElement verticalAlignment="Middle">
 							<font size="8"/>
 						</textElement>
 						<text><![CDATA[Efectivo]]></text>
 					</staticText>
 					<staticText>
-						<reportElement x="50" y="54" width="235" height="11" forecolor="#01558B" uuid="b052c521-a4c5-4865-961c-b1876e6b1737"/>
+						<reportElement x="50" y="31" width="235" height="11" forecolor="#01558B" uuid="b052c521-a4c5-4865-961c-b1876e6b1737"/>
 						<textElement verticalAlignment="Middle">
 							<font size="8"/>
 						</textElement>
 						<text><![CDATA[Recaudo]]></text>
 					</staticText>
 					<textField>
-						<reportElement x="285" y="3" width="265" height="20" uuid="2ec25415-6dc3-4f68-96e0-5d18067f1d46"/>
+						<reportElement x="284" y="-26" width="265" height="20" uuid="2ec25415-6dc3-4f68-96e0-5d18067f1d46"/>
 						<box rightPadding="3"/>
 						<textElement textAlignment="Right" verticalAlignment="Middle"/>
 						<textFieldExpression><![CDATA[$F{totalTerm} + " meses"]]></textFieldExpression>
 					</textField>
 					<textField>
-						<reportElement x="285" y="23" width="265" height="20" uuid="5b99add7-987b-4f5c-b1b5-717324175b9a"/>
+						<reportElement x="285" y="0" width="265" height="20" uuid="5b99add7-987b-4f5c-b1b5-717324175b9a"/>
 						<box rightPadding="3"/>
 						<textElement textAlignment="Right" verticalAlignment="Middle"/>
 						<textFieldExpression><![CDATA["$" + $F{totalMonthlyPayment}]]></textFieldExpression>
 					</textField>
 					<textField>
-						<reportElement x="285" y="43" width="265" height="11" uuid="8e2dff59-eb17-4abb-8df2-4432671ccd46"/>
+						<reportElement x="285" y="20" width="265" height="11" uuid="8e2dff59-eb17-4abb-8df2-4432671ccd46"/>
 						<box rightPadding="3"/>
 						<textElement textAlignment="Right" verticalAlignment="Middle">
 							<font size="8"/>
@@ -585,12 +571,28 @@
 						<textFieldExpression><![CDATA["$" +$F{cashPayment}]]></textFieldExpression>
 					</textField>
 					<textField>
-						<reportElement x="285" y="54" width="265" height="11" uuid="0b71d0ea-b4b7-4f5b-a763-52c6f18daa45"/>
+						<reportElement x="285" y="31" width="265" height="11" uuid="0b71d0ea-b4b7-4f5b-a763-52c6f18daa45"/>
 						<box rightPadding="3"/>
 						<textElement textAlignment="Right" verticalAlignment="Middle">
 							<font size="8"/>
 						</textElement>
 						<textFieldExpression><![CDATA["$" + $F{collectionPayment}]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement mode="Opaque" x="-1" y="45" width="550" height="20" forecolor="#01558B" backcolor="#F9F9F9" uuid="94c9c78c-5e65-4a7a-b38a-483ede81d2ee"/>
+						<box leftPadding="4">
+							<pen lineColor="#E0E0E0"/>
+						</box>
+						<textElement verticalAlignment="Middle">
+							<font isBold="true"/>
+						</textElement>
+						<text><![CDATA[Total a financiar]]></text>
+					</staticText>
+					<textField>
+						<reportElement mode="Opaque" x="284" y="45" width="266" height="20" backcolor="#F9F9F9" uuid="8d64b704-3e98-4b2c-8ca2-e9c0f4297956"/>
+						<box rightPadding="3"/>
+						<textElement textAlignment="Right" verticalAlignment="Middle"/>
+						<textFieldExpression><![CDATA["$" +$F{totalToFinance}]]></textFieldExpression>
 					</textField>
 				</frame>
 			</frame>
