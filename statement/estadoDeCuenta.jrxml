@@ -985,7 +985,7 @@
 					<reportElement x="397" y="47" width="175" height="130" uuid="bf42d535-0659-4f93-902e-85541e165f52"/>
 					<frame>
 						<reportElement x="0" y="0" width="175" height="130" uuid="a9ebbe2d-a71e-4149-ae12-4ea75e064187"/>
-						<textField textAdjust="StretchHeight">
+						<textField>
 							<reportElement x="0" y="0" width="175" height="47" uuid="9d55c6dc-2b37-46a6-9806-f0d1259153d4"/>
 							<box>
 								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1846,7 +1846,7 @@
 									<textElement textAlignment="Right" verticalAlignment="Middle">
 										<font fontName="SansSerif" size="8"/>
 									</textElement>
-									<textFieldExpression><![CDATA[ "$"+ String.format("%,.2f", $F{term_collection}.doubleValue())]]></textFieldExpression>
+									<textFieldExpression><![CDATA["$"+ String.format("%,.2f", $F{term_collection}.doubleValue())]]></textFieldExpression>
 								</textField>
 							</jr:detailCell>
 						</jr:column>
@@ -1876,7 +1876,7 @@
 									<textElement textAlignment="Right" verticalAlignment="Middle">
 										<font fontName="SansSerif" size="8"/>
 									</textElement>
-									<textFieldExpression><![CDATA[ "$"+ String.format("%,.2f", $F{term_cash}.doubleValue())]]></textFieldExpression>
+									<textFieldExpression><![CDATA["$"+ String.format("%,.2f", $F{term_cash}.doubleValue())]]></textFieldExpression>
 								</textField>
 							</jr:detailCell>
 						</jr:column>
@@ -1906,7 +1906,7 @@
 									<textElement textAlignment="Right" verticalAlignment="Middle">
 										<font fontName="SansSerif" size="8"/>
 									</textElement>
-									<textFieldExpression><![CDATA[ "$"+ String.format("%,.2f",  $F{term_paid}.doubleValue())]]></textFieldExpression>
+									<textFieldExpression><![CDATA["$"+ String.format("%,.2f",  $F{term_paid}.doubleValue())]]></textFieldExpression>
 								</textField>
 							</jr:detailCell>
 						</jr:column>
