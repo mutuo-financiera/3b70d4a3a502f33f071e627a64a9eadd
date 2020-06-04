@@ -282,7 +282,7 @@
 					<text><![CDATA[Tu propuesta de financiamiento incluye:]]></text>
 				</staticText>
 				<componentElement>
-					<reportElement x="0" y="23" width="572" height="24" uuid="0670c1b0-8353-45c4-a273-f7874abb813e">
+					<reportElement x="0" y="23" width="572" height="48" uuid="0670c1b0-8353-45c4-a273-f7874abb813e">
 						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 						<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
 						<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
@@ -295,9 +295,50 @@
 						</datasetRun>
 						<jr:columnGroup width="572" uuid="6fdda78a-8055-4478-9cd3-6dc9b183fe87">
 							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [3]"/>
+							<jr:tableFooter style="Table_TH" height="15" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<staticText>
+									<reportElement mode="Opaque" x="0" y="0" width="572" height="15" uuid="d0bf7a4b-3d12-45f7-aefd-3a390c4a65bd"/>
+									<box rightPadding="4">
+										<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Right" verticalAlignment="Middle">
+										<font size="8"/>
+									</textElement>
+									<text><![CDATA[*Todas las cantidades incluyen IVA]]></text>
+								</staticText>
+							</jr:tableFooter>
 							<jr:column width="40" uuid="e6a0fc80-371a-44b5-94c9-cce8097c6e02">
 								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
 								<property name="com.jaspersoft.studio.layout"/>
+								<jr:columnFooter style="Table_CH" height="24" rowSpan="1">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<box>
+										<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<staticText>
+										<reportElement mode="Opaque" x="0" y="0" width="40" height="24" backcolor="#F9F9F9" uuid="a877ccc7-6573-4681-831b-fe31a9a7d1d2"/>
+										<box>
+											<pen lineColor="#F9F9F9"/>
+											<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<text><![CDATA[]]></text>
+									</staticText>
+								</jr:columnFooter>
 								<jr:detailCell style="Table_TD" height="24">
 									<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
 									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
@@ -328,6 +369,26 @@
 							</jr:column>
 							<jr:column width="398" uuid="ec583f79-2880-44db-ae17-889ce91ac8c2">
 								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+								<jr:columnFooter style="Table_CH" height="24" rowSpan="1">
+									<box>
+										<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<staticText>
+										<reportElement mode="Opaque" x="0" y="0" width="398" height="24" backcolor="#F9F9F9" uuid="64ebe9c9-4062-40aa-b69a-354e81c3f7cf"/>
+										<box rightPadding="5">
+											<pen lineColor="#F9F9F9"/>
+											<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Right" verticalAlignment="Middle"/>
+										<text><![CDATA[Valor Total ]]></text>
+									</staticText>
+								</jr:columnFooter>
 								<jr:detailCell style="Table_TD" height="24">
 									<box>
 										<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -347,6 +408,26 @@
 							</jr:column>
 							<jr:column width="134" uuid="43f522dc-64a2-48cc-8474-d8259daeb2cb">
 								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+								<jr:columnFooter style="Table_CH" height="24" rowSpan="1">
+									<box>
+										<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textField>
+										<reportElement mode="Opaque" x="0" y="0" width="134" height="24" backcolor="#E9E9E9" uuid="08bdd176-bdcd-4205-a505-60ebd192506a"/>
+										<box bottomPadding="0" rightPadding="5">
+											<pen lineColor="#E9E9E9"/>
+											<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Right" verticalAlignment="Middle"/>
+										<textFieldExpression><![CDATA[new java.text.DecimalFormat("$#,##0.00").format(Integer.valueOf($V{totalSum}))]]></textFieldExpression>
+									</textField>
+								</jr:columnFooter>
 								<jr:detailCell style="Table_TD" height="24">
 									<box>
 										<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -354,6 +435,18 @@
 										<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 										<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 									</box>
+									<textField>
+										<reportElement mode="Opaque" x="0" y="0" width="134" height="24" backcolor="#D6E2E9" uuid="57ba4c31-27f3-4a79-a9d8-c71726411b8a"/>
+										<box bottomPadding="0" rightPadding="5">
+											<pen lineColor="#D6E2E9"/>
+											<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Right" verticalAlignment="Middle"/>
+										<textFieldExpression><![CDATA[new java.text.DecimalFormat("$#,##0.00").format(Integer.valueOf($F{cost}))]]></textFieldExpression>
+									</textField>
 								</jr:detailCell>
 							</jr:column>
 						</jr:columnGroup>
@@ -496,7 +589,7 @@
 						<text><![CDATA[Total a financiar]]></text>
 					</staticText>
 					<textField>
-						<reportElement mode="Opaque" x="284" y="45" width="266" height="20" backcolor="#F9F9F9" uuid="8d64b704-3e98-4b2c-8ca2-e9c0f4297956"/>
+						<reportElement mode="Opaque" x="284" y="44" width="266" height="20" backcolor="#F9F9F9" uuid="8d64b704-3e98-4b2c-8ca2-e9c0f4297956"/>
 						<box rightPadding="3"/>
 						<textElement textAlignment="Right" verticalAlignment="Middle"/>
 						<textFieldExpression><![CDATA["$" +$F{totalToFinance}]]></textFieldExpression>
