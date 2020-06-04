@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<!-- Created with Jaspersoft Studio version 6.12.0.final using JasperReports Library version 6.12.1-ac0eebdb29e4c0985457bab279a6db744d661530  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="estadoDeCuenta" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ced95029-b569-4027-895c-af2843a4e088">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
 	<property name="com.jaspersoft.studio.unit." value="mm"/>
@@ -248,15 +248,15 @@
 			<property name="net.sf.jasperreports.json.field.expression" value="loan_id"/>
 			<fieldDescription><![CDATA[loan_id]]></fieldDescription>
 		</field>
-		<field name="term_collection" class="java.lang.String">
+		<field name="term_collection" class="java.lang.Double">
 			<property name="net.sf.jasperreports.json.field.expression" value="term_collection"/>
 			<fieldDescription><![CDATA[term_collection]]></fieldDescription>
 		</field>
-		<field name="term_cash" class="java.lang.String">
+		<field name="term_cash" class="java.lang.Double">
 			<property name="net.sf.jasperreports.json.field.expression" value="term_cash"/>
 			<fieldDescription><![CDATA[term_cash]]></fieldDescription>
 		</field>
-		<field name="term_paid" class="java.lang.String">
+		<field name="term_paid" class="java.lang.Double">
 			<property name="net.sf.jasperreports.json.field.expression" value="term_paid"/>
 			<fieldDescription><![CDATA[term_paid]]></fieldDescription>
 		</field>
@@ -264,7 +264,7 @@
 			<property name="net.sf.jasperreports.json.field.expression" value="term_capital"/>
 			<fieldDescription><![CDATA[term_capital]]></fieldDescription>
 		</field>
-		<field name="term_capital_vat" class="java.lang.String">
+		<field name="term_capital_vat" class="java.lang.Double">
 			<property name="net.sf.jasperreports.json.field.expression" value="term_capital_vat"/>
 			<fieldDescription><![CDATA[term_capital_vat]]></fieldDescription>
 		</field>
@@ -276,7 +276,7 @@
 			<property name="net.sf.jasperreports.json.field.expression" value="term_interests_vat"/>
 			<fieldDescription><![CDATA[term_interests_vat]]></fieldDescription>
 		</field>
-		<field name="term_due_for_payment" class="java.lang.String">
+		<field name="term_due_for_payment" class="java.lang.Double">
 			<property name="net.sf.jasperreports.json.field.expression" value="term_due_for_payment"/>
 			<fieldDescription><![CDATA[term_due_for_payment]]></fieldDescription>
 		</field>
@@ -284,11 +284,11 @@
 			<property name="net.sf.jasperreports.json.field.expression" value="term_overdue"/>
 			<fieldDescription><![CDATA[term_overdue]]></fieldDescription>
 		</field>
-		<field name="total_collection" class="java.lang.String">
+		<field name="total_collection" class="java.lang.Double">
 			<property name="net.sf.jasperreports.json.field.expression" value="total_collection"/>
 			<fieldDescription><![CDATA[total_collection]]></fieldDescription>
 		</field>
-		<field name="total_cash" class="java.lang.String">
+		<field name="total_cash" class="java.lang.Double">
 			<property name="net.sf.jasperreports.json.field.expression" value="total_cash"/>
 			<fieldDescription><![CDATA[total_cash]]></fieldDescription>
 		</field>
@@ -328,11 +328,11 @@
 			<property name="net.sf.jasperreports.json.field.expression" value="cutoff_date"/>
 			<fieldDescription><![CDATA[cutoff_date]]></fieldDescription>
 		</field>
-		<field name="total_balance" class="java.lang.String">
+		<field name="total_balance" class="java.lang.Double">
 			<property name="net.sf.jasperreports.json.field.expression" value="total_balance"/>
 			<fieldDescription><![CDATA[total_balance]]></fieldDescription>
 		</field>
-		<field name="term_balance" class="java.lang.String">
+		<field name="term_balance" class="java.lang.Double">
 			<property name="net.sf.jasperreports.json.field.expression" value="term_balance"/>
 			<fieldDescription><![CDATA[term_balance]]></fieldDescription>
 		</field>
@@ -341,30 +341,30 @@
 			<initialValueExpression><![CDATA[1]]></initialValueExpression>
 		</variable>
 		<variable name="monthlyPaymentSum" class="java.lang.Double" calculation="Sum">
-			<variableExpression><![CDATA[Double.parseDouble($F{term_due_for_payment})]]></variableExpression>
+			<variableExpression><![CDATA[$F{term_due_for_payment}]]></variableExpression>
 		</variable>
 		<variable name="termcapitalSum" class="java.lang.Double" calculation="Sum">
-			<variableExpression><![CDATA[Double.parseDouble($F{term_capital})]]></variableExpression>
+			<variableExpression><![CDATA[$F{term_capital}]]></variableExpression>
 			<initialValueExpression><![CDATA[0.0]]></initialValueExpression>
 		</variable>
 		<variable name="termCapitalVatSum" class="java.lang.Double" calculation="Sum">
-			<variableExpression><![CDATA[Double.parseDouble($F{term_capital_vat})]]></variableExpression>
+			<variableExpression><![CDATA[$F{term_capital_vat}]]></variableExpression>
 			<initialValueExpression><![CDATA[0.0]]></initialValueExpression>
 		</variable>
 		<variable name="termCollectionSum" class="java.lang.Double" calculation="Sum">
-			<variableExpression><![CDATA[Double.parseDouble($F{term_collection})]]></variableExpression>
+			<variableExpression><![CDATA[$F{term_collection}]]></variableExpression>
 			<initialValueExpression><![CDATA[0.0]]></initialValueExpression>
 		</variable>
 		<variable name="termCashSum" class="java.lang.Double" calculation="Sum">
-			<variableExpression><![CDATA[Double.parseDouble($F{term_cash})]]></variableExpression>
+			<variableExpression><![CDATA[$F{term_cash}]]></variableExpression>
 			<initialValueExpression><![CDATA[0.0]]></initialValueExpression>
 		</variable>
 		<variable name="termPaidSum" class="java.lang.Double" calculation="Sum">
-			<variableExpression><![CDATA[Double.parseDouble($F{term_paid})]]></variableExpression>
+			<variableExpression><![CDATA[$F{term_paid}]]></variableExpression>
 			<initialValueExpression><![CDATA[0.0]]></initialValueExpression>
 		</variable>
 		<variable name="termOverdueSum" class="java.lang.Double" calculation="Sum">
-			<variableExpression><![CDATA[Double.parseDouble($F{term_balance})]]></variableExpression>
+			<variableExpression><![CDATA[$F{term_balance}]]></variableExpression>
 			<initialValueExpression><![CDATA[0.0]]></initialValueExpression>
 		</variable>
 	</subDataset>
@@ -664,7 +664,7 @@
 					<reportElement x="0" y="0" width="360" height="98" uuid="24d38333-f05c-4741-8fbc-cffbcba959e8"/>
 					<image hAlign="Center">
 						<reportElement x="0" y="0" width="80" height="60" uuid="72f0f538-126b-439b-ba25-ab514a979fef"/>
-						<imageExpression><![CDATA["Mutuo-logo.png"]]></imageExpression>
+						<imageExpression><![CDATA["https://raw.githubusercontent.com/mutuo-financiera/3b70d4a3a502f33f071e627a64a9eadd/master/assets/Mutuo-logo.png"]]></imageExpression>
 					</image>
 					<frame>
 						<reportElement x="85" y="7" width="275" height="44" uuid="249dfc2b-e171-4368-8891-4d205ce4dee5"/>
@@ -739,7 +739,7 @@
 							<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
 								<font size="8"/>
 							</textElement>
-							<textFieldExpression><![CDATA["Saldo al periodo anterior"]]></textFieldExpression>
+							<textFieldExpression><![CDATA["Monto vencido al periodo anterior"]]></textFieldExpression>
 						</textField>
 						<staticText>
 							<reportElement x="9" y="10" width="140" height="11" uuid="0927213b-0a90-470f-8e7c-946545c4a18e"/>
@@ -923,7 +923,7 @@
 							<textElement textAlignment="Left" verticalAlignment="Top">
 								<font size="8" isBold="true"/>
 							</textElement>
-							<text><![CDATA[Faltante para liquidar el credito]]></text>
+							<text><![CDATA[Faltante para liquidar]]></text>
 						</staticText>
 						<textField>
 							<reportElement x="138" y="44" width="108" height="11" uuid="77d992b6-328f-4fe0-860a-8844803a323f"/>
@@ -985,7 +985,7 @@
 					<reportElement x="397" y="47" width="175" height="130" uuid="bf42d535-0659-4f93-902e-85541e165f52"/>
 					<frame>
 						<reportElement x="0" y="0" width="175" height="130" uuid="a9ebbe2d-a71e-4149-ae12-4ea75e064187"/>
-						<textField isStretchWithOverflow="true">
+						<textField textAdjust="StretchHeight">
 							<reportElement x="0" y="0" width="175" height="47" uuid="9d55c6dc-2b37-46a6-9806-f0d1259153d4"/>
 							<box>
 								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1060,7 +1060,7 @@
 											<bottomPen lineWidth="1.0"/>
 											<rightPen lineWidth="1.0"/>
 										</box>
-										<imageExpression><![CDATA[$F{status} == "1" ?  "check.png" : "cross.png"]]></imageExpression>
+										<imageExpression><![CDATA[$F{status} == "1" ?  "https://raw.githubusercontent.com/mutuo-financiera/3b70d4a3a502f33f071e627a64a9eadd/master/assets/check.png" : "https://raw.githubusercontent.com/mutuo-financiera/3b70d4a3a502f33f071e627a64a9eadd/master/assets/cross.png"]]></imageExpression>
 									</image>
 								</jr:listContents>
 							</jr:list>
@@ -1095,7 +1095,7 @@
 											<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#01558B"/>
 											<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#01558B"/>
 										</box>
-										<imageExpression><![CDATA[$F{status} == "1" ?  "check.png" : "cross.png"]]></imageExpression>
+										<imageExpression><![CDATA[$F{status} == "1" ?  "https://raw.githubusercontent.com/mutuo-financiera/3b70d4a3a502f33f071e627a64a9eadd/master/assets/check.png" : "https://raw.githubusercontent.com/mutuo-financiera/3b70d4a3a502f33f071e627a64a9eadd/master/assets/cross.png"]]></imageExpression>
 									</image>
 								</jr:listContents>
 							</jr:list>
@@ -1816,7 +1816,7 @@
 									<textElement textAlignment="Right" verticalAlignment="Middle">
 										<font fontName="SansSerif" size="8"/>
 									</textElement>
-									<textFieldExpression><![CDATA[$F{term_due_for_payment} == null ? "$0.00" : "$"+ $F{term_due_for_payment}]]></textFieldExpression>
+									<textFieldExpression><![CDATA[$F{term_due_for_payment} == null ? "$0.00" :  "$"+ String.format("%,.2f", $F{term_due_for_payment})]]></textFieldExpression>
 								</textField>
 							</jr:detailCell>
 						</jr:column>
@@ -1846,7 +1846,7 @@
 									<textElement textAlignment="Right" verticalAlignment="Middle">
 										<font fontName="SansSerif" size="8"/>
 									</textElement>
-									<textFieldExpression><![CDATA["$"+ $F{term_collection}]]></textFieldExpression>
+									<textFieldExpression><![CDATA[ "$"+ String.format("%,.2f", $F{term_collection}.doubleValue())]]></textFieldExpression>
 								</textField>
 							</jr:detailCell>
 						</jr:column>
@@ -1876,7 +1876,7 @@
 									<textElement textAlignment="Right" verticalAlignment="Middle">
 										<font fontName="SansSerif" size="8"/>
 									</textElement>
-									<textFieldExpression><![CDATA["$"+ $F{term_cash}]]></textFieldExpression>
+									<textFieldExpression><![CDATA[ "$"+ String.format("%,.2f", $F{term_cash}.doubleValue())]]></textFieldExpression>
 								</textField>
 							</jr:detailCell>
 						</jr:column>
@@ -1906,7 +1906,7 @@
 									<textElement textAlignment="Right" verticalAlignment="Middle">
 										<font fontName="SansSerif" size="8"/>
 									</textElement>
-									<textFieldExpression><![CDATA["$"+ $F{term_paid}]]></textFieldExpression>
+									<textFieldExpression><![CDATA[ "$"+ String.format("%,.2f",  $F{term_paid}.doubleValue())]]></textFieldExpression>
 								</textField>
 							</jr:detailCell>
 						</jr:column>
@@ -1957,7 +1957,7 @@
 									<textElement textAlignment="Center" verticalAlignment="Middle">
 										<font fontName="SansSerif" size="8" isBold="true" isItalic="true"/>
 									</textElement>
-									<text><![CDATA[Saldo del periodo]]></text>
+									<text><![CDATA[Monto vencido]]></text>
 								</staticText>
 							</jr:columnHeader>
 							<jr:detailCell style="Table 2_TD" height="11">
@@ -1966,7 +1966,7 @@
 									<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
 										<font fontName="SansSerif" size="8"/>
 									</textElement>
-									<textFieldExpression><![CDATA[(Double.parseDouble($F{total_balance}) <0 ) ?  "<style forecolor='red' isBold='true'>$"+ $F{total_balance}+"</style>"  : "$"+ $F{total_balance}]]></textFieldExpression>
+									<textFieldExpression><![CDATA[($F{total_balance} <0 ) ?  "<style forecolor='red' isBold='true'>$"+  String.format("%,.2f", $F{total_balance}.doubleValue()) +"</style>"  : "$"+ String.format("%,.2f", $F{total_balance}.doubleValue())]]></textFieldExpression>
 								</textField>
 							</jr:detailCell>
 						</jr:column>
@@ -2027,7 +2027,7 @@
 					<textElement verticalAlignment="Middle">
 						<font size="8" isBold="true"/>
 					</textElement>
-					<text><![CDATA[Saldo pendiente]]></text>
+					<text><![CDATA[]]></text>
 				</staticText>
 				<staticText>
 					<reportElement x="0" y="0" width="9" height="11" uuid="962ac23c-4900-4eb2-9315-8685c1142fdc"/>
@@ -2161,7 +2161,7 @@
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
-					<text><![CDATA[atencionclientes@mutuofinanciera.com]]></text>
+					<text><![CDATA[contacto@mutuofinanciera.com]]></text>
 				</staticText>
 				<staticText>
 					<reportElement x="20" y="101" width="253" height="22" uuid="5cfad680-e670-473a-b1e1-dffbbc36f39f">
