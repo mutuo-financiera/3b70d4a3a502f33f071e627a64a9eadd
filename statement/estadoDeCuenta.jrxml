@@ -1714,13 +1714,6 @@
 					<text><![CDATA[PERIODOS]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="0" y="20" width="572" height="8" uuid="27551e56-ce22-40a4-9559-4fc9c81f483a"/>
-					<textElement textAlignment="Right" verticalAlignment="Top">
-						<font size="6" isBold="false"/>
-					</textElement>
-					<text><![CDATA[*Incluye IVA]]></text>
-				</staticText>
-				<staticText>
 					<reportElement x="0" y="28" width="70" height="11" uuid="b2730ccc-a4f3-43e9-9802-b41df2436208"/>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
